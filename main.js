@@ -2,6 +2,7 @@
 function add(a, b) {
     return a + b
 }
+
 console.log(add(2, 3))
 
 
@@ -37,24 +38,37 @@ function factorial (x) {
 
 console.log(factorial(5))
 
+// let sequence = []
+// let n = 0
 
 function nthFibonacci (n) {
-    let fibonacci = 0
+
     let sequence = [0, 1]
-    for (let i = 0; sequence.length <= n; i++) {
-        fibonacci = add(i, fibonacci)
-        sequence.push("fibonacci")
+    for (let currentIndex = 2; sequence.length < n; currentIndex++) {
+        let oneBack = sequence[currentIndex-1]
+        let twoBack = sequence[currentIndex-2]
+        sequence[currentIndex] = add(oneBack, twoBack)
     }
-    return fibonacci
+    console.log(sequence)
+    return sequence[n-1]
+    
 }
 
 console.log(nthFibonacci(8))
 
 
+// function nthFibonacci (n) {
+//     let fibonacci1 = 0
+//     let fibonacci2 = 0
+//     let n = 0
+//     for (let i = 0; sequence.length <= n; i++) {
+//         fibonacci = add(i, fibonacci)
+//         sequence.push(fibonacci)
+//     }
+//     return fibonacci
+// }
 
 
-
-// changing something to figure out why I can't git add commit...
 
 
 
