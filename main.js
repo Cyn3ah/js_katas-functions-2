@@ -56,6 +56,24 @@ function nthFibonacci (n) {
 
 console.log(nthFibonacci(8))
 
+function nthFibonacciNoArray (n) {
+    let backOne = 1
+    let backTwo = 0
+    for (let i = 0; i < n; i++)
+    // return backOne
+    backTwo = backOne
+    console.log("backOne")
+    console.log("backTwo")
+    for (let i = backOne; backOne < n; backOne++)
+    // return backTwo
+    console.log("backTwo")
+    nthFibonacciNoArray = add(backOne, backTwo)
+    return nthFibonacciNoArray
+
+}
+
+console.log(nthFibonacciNoArray(8))
+
 
 // function nthFibonacci (n) {
 //     let fibonacci1 = 0
