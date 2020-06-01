@@ -74,23 +74,3 @@ function nthFibonacciNoArray (n) {
 
 console.log(nthFibonacciNoArray(8))
 
-
-// function nthFibonacci (n) {
-//     let fibonacci1 = 0
-//     let fibonacci2 = 0
-//     let n = 0
-//     for (let i = 0; sequence.length <= n; i++) {
-//         fibonacci = add(i, fibonacci)
-//         sequence.push(fibonacci)
-//     }
-//     return fibonacci
-// }
-
-
-
-
-
-
-
-
-
